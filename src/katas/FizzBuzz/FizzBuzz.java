@@ -1,14 +1,14 @@
-package katas;
+package katas.FizzBuzz;
 
 public class FizzBuzz {
 
     public static void main(String[] args) {
         for (int i = 1; i <= 100; i++) {
-            System.out.println(obtenerFizzBuzz(i));
+            System.out.println(ObtenerFizzBuzz(i));
         }
     }
 
-    private static String obtenerFizzBuzz(int num) {
+    public static String ObtenerFizzBuzz(int num) {
         if (num % 3 == 0 && num % 5 == 0) {
             return "fizzbuzz";
         } else if (num % 3 == 0) {
