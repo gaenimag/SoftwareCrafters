@@ -1,0 +1,32 @@
+Laboratorio de katas - Katas de calentamiento
+
+ Kata: Fibonacci
+
+
+La sucesión de Fibonacci es uno de los ejercicios clásicos en programación.
+
+Fue descrita por Leonardo de Pisa, más conocido como Fibonacci, un matemático del siglo XIII. Desde entonces ha aparecido en todo tipo de contextos: matemáticas, computación, teoría de juegos… y sí, también entrevistas de trabajo.
+
+Tu objetivo es construir una función que reciba un número entero n y devuelva el enésimo número de la serie de Fibonacci.
+
+La secuencia comienza así: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...
+
+Los dos primeros términos son 0 y 1. A partir de ahí cada número es la suma de los dos anteriores.
+
+Así de simple. O eso parece.
+
+Detrás de esta aparente sencillez hay bastante jugo: formas distintas de resolverlo, implicaciones en rendimiento, y patrones que luego verás repetidos en muchos otros algoritmos.
+
+Es ideal para practicar pensamiento recursivo, repaso de condiciones base y también para explorar distintas formas de implementar la misma solución (con o sin optimizaciones, según el enfoque que escojas).
+Qué buscamos resolver exactamente
+Necesitamos una función que:
+- Devuelva 0 si le pasas 0
+- Devuelva 1 si le pasas 1
+- Y a partir de ahí, devuelva la suma de los dos números anteriores
+
+Ejemplos:
+- fibonacci(0) → 0
+- fibonacci(1) → 1
+- fibonacci(2) → 1
+- fibonacci(3) → 2
+- fibonacci(6) → 8

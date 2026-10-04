@@ -1,0 +1,39 @@
+Laboratorio de katas - Katas de calentamiento
+
+ Kata: Prime Factors
+
+Esta kata es una de las mejores formas de practicar cómo construir una solución de forma progresiva y deliberada, a través de pasos pequeños y guiados por tests.
+
+El reto consiste en construir una función que, al recibir un número natural, devuelva una lista de sus factores primos en orden ascendente. Por ejemplo:
+
+2 → [2]
+4 → [2, 2]
+8 → [2, 2, 2]
+3 → [3]
+9 → [3, 3]
+6 → [2, 3]
+25 → [5, 5]
+1155 → [3, 5, 7, 11]
+
+ Esta kata es especialmente útil para aplicar la premisa de la prioridad de transformación (TPP), una técnica propuesta por Robert C. Martin para evolucionar soluciones paso a paso, con el menor salto posible entre tests.
+¿Qué es TPP?
+TPP (Transformation Priority Premise) es una lista de transformaciones que puedes aplicar al código al desarrollar con TDD. La idea es generalizar lo mínimo posible, en el momento justo, para mantener el diseño limpio y la intención clara.
+
+Estas son las transformaciones en orden de menor a mayor generalidad:
+
+1. {} ⇒ nil: de no haber código a devolver nulo.
+2. nil ⇒ constant: de nulo a un valor literal.
+3. constant ⇒ constant+: de un literal simple a uno más complejo.
+4. constant ⇒ scalar: de un literal a una variable.
+5. statement ⇒ statements: añadir más líneas de código.
+6. unconditional ⇒ if: introducir una condición.
+7. scalar ⇒ array: de variable a colección.
+8. array ⇒ container: de colección a estructura más compleja.
+9. statement ⇒ recursion: introducir recursividad.
+10. if ⇒ while: convertir condición en bucle.
+11. expression ⇒ function: extraer expresión a función.
+12. variable ⇒ assignment: mutar una variable.
+
+(Y si, la recursión está antes que los bucles)
+
+No tienes que usarlos todos ni seguir el orden al pie de la letra, pero tenerlos presentes te ayuda a tomar mejores decisiones sobre qué test escribir a continuación, y cómo avanzar en el diseño sin saltos bruscos.

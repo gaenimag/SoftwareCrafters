@@ -42,4 +42,10 @@ class CamelCaseConverterTest {
     void convertsTheFirstEachCharacterToUppercase() {
         assertEquals("FooBarFoo", CamelCase.ConvertToCamelCase("foo_bar-foo"));
     }
+
+    @Test
+    @DisplayName("Converts the non first character of each word to lowercase")
+    void convertsTheNonFirstEachCharacterToLowercase() {
+        assertEquals("FooBarFoo", CamelCase.ConvertToCamelCase("FOo_bAr-fOO"));
+    }
 }

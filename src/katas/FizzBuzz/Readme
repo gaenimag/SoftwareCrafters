@@ -1,0 +1,25 @@
+Laboratorio de katas - katas de Calentamiento
+
+ Kata: FizzBuzz
+
+
+FizzBuzz es probablemente la kata más conocida entre los desarrolladores. Y no por casualidad.
+
+Más allá de ser una prueba típica en entrevistas técnicas, es también un excelente punto de partida para entrenar fundamentos: funciones puras, condiciones mínimas, naming, early return… Personalmente es la primera kata que hago cada vez que exploro un nuevo lenguaje.
+
+El ejercicio original viene de un juego infantil pensado para practicar divisiones. Se volvió popular entre los devs después de que Emily Bache y Michael Feathers la presentaran en la competición Programming with the Stars, durante la Agile Conference de 2008.
+
+El enunciado clásico dice así:
+
+“Escribe un programa que muestre en pantalla los números del 1 al 100. Pero sustituye los múltiplos de 3 por ‘fizz’, los de 5 por ‘buzz’, y los múltiplos de ambos por ‘fizzbuzz’.”
+Qué buscamos resolver exactamente
+Diseñar una función que:
+Devuelve "fizz" si el número es divisible entre 3
+Devuelve "buzz" si es divisible entre 5
+Devuelve "fizzbuzz" si es divisible entre 3 y 5
+Y si no se cumple nada de eso, devuelve el número como string
+Curso donde está resuelta
+Esta kata está grabada y explicada paso a paso en el curso Testing Sostenible.
+Repositorio de la solución
+Puedes consultar el código completo en GitHub:
+https://github.com/softwarecrafters-io/kata-fizzbuzz

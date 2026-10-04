@@ -1,0 +1,38 @@
+Laboratorio de katas - Katas de calentamiento
+
+ Kata: String Calculator
+
+La String Calculator es una de esas katas que parecen simples al principio… hasta que empiezas a añadir casos.
+
+La propuesta es implementar una función que sume los números contenidos en una cadena de texto. Pero, como suele pasar, el diablo está en los detalles.
+
+El ejercicio obliga a pensar en validaciones, flujos de control, parsing de texto y manejo de errores.
+
+Y, sobre todo, te enseña a avanzar paso a paso, en orden, sin sobrecomplicar la solución desde el principio.
+Qué buscamos resolver exactamente
+La función recibe una cadena de texto y devuelve la suma de los valores numéricos que contenga.
+
+Debes cubrir los siguientes casos:
+
+- Si la entrada es null o una cadena vacía, devuelve 0.
+Ej.: null → 0, "" → 0
+
+- Si la cadena contiene un solo número, conviértelo a tipo numérico y devuélvelo.
+Ej.: "1" → 1
+
+- Si contiene varios números separados por comas, devuelve la suma.
+Ej.: "1,2" → 3, "1,2,3" → 6
+
+- Si hay caracteres no numéricos (por ejemplo, letras), ignóralos.
+Ej.: "a" → 0, "1,a" → 1, "1,a,2" → 3, "1a,2" → 2
+
+- La función debe admitir separadores personalizados. Estos se declaran al inicio de la cadena entre barras: //<separador>/<expresion>
+
+Ej:
+"//#/3#2" → 5
+"//#/3,2" → 0
+"//%/1%2%3" → 6
+ Consejos antes de empezar
+No intentes resolverlo todo de golpe.
+
+Piensa primero en la secuencia de casos que vas a cubrir. El orden de implementación importa, empezar por el caso más complejo solo te llevará a una solución innecesariamente enrevesada.

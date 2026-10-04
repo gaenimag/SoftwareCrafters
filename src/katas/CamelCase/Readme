@@ -1,0 +1,40 @@
+Laboratorio de katas - Katas de calentamiento
+
+ Kata: CamelCase Converter
+
+
+Convertir texto a CamelCase parece algo trivial… hasta que empiezas a considerar los distintos formatos de entrada: palabras separadas por espacios, guiones, mayúsculas sueltas, combinaciones con minúsculas…
+
+Esta kata es muy útil para trabajar operaciones con strings, detectar patrones y empezar a pensar en cómo abordar casos límite.
+
+Aquí nos centraremos en la variante conocida como PascalCase (también llamada UpperCamelCase): cada palabra comienza en mayúscula, incluida la primera.
+
+Es un ejercicio que te obliga a tomar decisiones desde el primer momento: ¿Qué consideras una palabra? ¿Cómo normalizas la entrada? ¿Cómo aseguras que tu solución vale para otros formatos?
+Qué buscamos resolver exactamente
+Desarrollar una función que convierta una cadena de texto en PascalCase, manejando distintas formas de entrada.  Estos son los casos que al menos debes cubrir:
+
+Una cadena vacía debe devolverse tal cual.
+- Ej.: "" → ""
+
+Una sola palabra, con la primera letra en mayúscula, se mantiene igual.
+- Ej.: "Foo" → "Foo"
+
+Palabras con mayúsculas iniciales separadas por espacios se unen en PascalCase.
+- Ej.: "Foo Bar" → "FooBar"
+
+Palabras separadas por guiones o guiones bajos se tratan igual.
+- Ej.: "Foo_Bar-Foo" → "FooBarFoo"
+
+Si la palabra empieza en minúscula, se convierte a mayúscula.
+- Ej.: "foo" → "Foo"
+
+Para entradas en minúsculas con separadores, cada palabra se transforma y se concatena.
+- Ej.: "foo_bar foo-bar" → "FooBarFooBar"
+
+El orden de estos casos no es aleatorio: están pensados para construir la solución paso a paso, sin atragantarte desde el principio.
+
+Curso donde está resuelta
+Esta kata está grabada y explicada paso a paso en el curso Testing Sostenible.
+Repositorio de la solución
+Puedes consultar el código completo en GitHub:
+https://github.com/softwarecrafters-io/kata-camelcase-converter
